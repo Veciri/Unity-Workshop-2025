@@ -25,6 +25,11 @@ public class TileManager : MonoBehaviour
                 print("inside");
                 hotbar.hotbarSlots[hotbar.currentItemBeingSelected].item.UseItem();
             }
+            if(Input.GetKeyDown(KeyCode.Q))
+            {
+                hotbar.hotbarSlots[hotbar.currentItemBeingSelected].item.DropItem();
+                //TO-DO actually get rid of the item from the inventory
+            }
         }
     }
     public Vector3Int GetMouseToTile()

@@ -12,4 +12,9 @@ public class ItemClass : ScriptableObject
     {
         Debug.Log("using item");
     }
+
+    public void DropItem()
+    {
+        FindAnyObjectByType<DroppingManager>().CreateItemDrop(this);
+    }
 }

@@ -182,6 +182,7 @@ GameObject:
   - component: {fileID: 261662279}
   - component: {fileID: 261662280}
   - component: {fileID: 261662281}
+  - component: {fileID: 261662282}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -208,6 +209,7 @@ MonoBehaviour:
   currentItemBeingDragged: -1
   itemExample: {fileID: 11400000, guid: a0bb912b7f2822841874b5135e401767, type: 2}
   itemExample2: {fileID: 11400000, guid: 228afbef0a772334aa3f3611d98469f5, type: 2}
+  itemExample3: {fileID: 11400000, guid: 55f7c349907f4bd4cba70127535aabe7, type: 2}
 --- !u!4 &261662277
 Transform:
   m_ObjectHideFlags: 0
@@ -282,6 +284,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6937527e908a9084a91421b8c94ce2a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &261662282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261662275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d558f0bb27316644cbc437ee13631528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  droppedItemPrefab: {fileID: 5932170676448933375, guid: 99ef3d3f652b7d54bbdda07567303a9e, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

@@ -79,7 +79,7 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    private void AddItemToInventory(ItemClass itemRef, int quantity)
+    public void AddItemToInventory(ItemClass itemRef, int quantity)
     {
         //TO-DO check if there's space
 
@@ -90,11 +90,13 @@ public class InventoryManager : MonoBehaviour
     #region testing
     public ItemClass itemExample;
     public ItemClass itemExample2;
+    public ItemClass itemExample3;
     private void TestAddingItems()
     {
         int quantity = 3;
         AddItemToInventory(itemExample, quantity);
         AddItemToInventory(itemExample2, 1);
+        AddItemToInventory(itemExample3, 1);
     }
     #endregion
 }

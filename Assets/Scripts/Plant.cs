@@ -11,6 +11,7 @@ public class Plant : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public int growthIndex;
     public bool isWatered = false;
+    public bool isHarvestable = false;
 
     private void Awake()
     {

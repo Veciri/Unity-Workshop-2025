@@ -8,6 +8,7 @@ public class PlantManager : MonoBehaviour
     public TileManager tileManager;
     public Transform plantsTransform;
     public List<Plant> currentPlants = new List<Plant>();
+
     public GameObject plantPrefab;
 
     private void Start()
@@ -38,10 +39,13 @@ public class PlantManager : MonoBehaviour
     {
         foreach(Plant plant in currentPlants)
         {
-            if(plant.isWatered)
+            if(plant.isWatered && !plant.isHarvestable)
             {
-                plant.growthIndex++;                
-                //TO-DO Would need to check if at max, meaning it can be harvested
+                plant.growthIndex++;
+                if (plant.growthIndex == plant.seedRef.plantRef.GetTimeToGrow())
+                {
+                    plant.isHarvestable = true;
+                }
             }
             plant.isWatered = false;
             plant.SetVisual();
@@ -58,6 +62,21 @@ public class PlantManager : MonoBehaviour
                 plant.isWatered = true;
                 plant.SetVisual();
                 return;
+            }
+        }
+    }
+
+    public void HarvestItem()
+    {
+        Vector3Int plantPos = tileManager.GetMouseToTile();
+
+        for(int c=0; c<currentPlants.Count; c++)
+        {
+            if (currentPlants[c].transform.position == plantPos && currentPlants[c].isHarvestable)
+            {
+                GetComponent<DroppingManager>().CreateItemDrop(currentPlants[c].seedRef.plantRef);
+                currentPlants.RemoveAt(c);
+                Destroy(currentPlants[c].gameObject);
             }
         }
     }

@@ -9,6 +9,6 @@ public class PlantClass : ItemClass
 
     public int GetTimeToGrow()
     {
-        return growingSprites.Count;
+        return growingSprites.Count - 1;
     }
 }
