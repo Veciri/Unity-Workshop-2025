@@ -6,6 +6,7 @@ using UnityEngine.Tilemaps;
 public class TileManager : MonoBehaviour
 {
     public Tilemap tilemap;
+    public Transform tileSelector;
 
     public HotbarManager hotbar;
 
@@ -31,6 +32,7 @@ public class TileManager : MonoBehaviour
                 //TO-DO actually get rid of the item from the inventory
             }
         }
+        tileSelector.position = GetMouseToTile();
     }
     public Vector3Int GetMouseToTile()
     {

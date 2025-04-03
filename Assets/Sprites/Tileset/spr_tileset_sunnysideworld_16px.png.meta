@@ -354,7 +354,7 @@ TextureImporter:
         width: 14
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -362,6 +362,111 @@ TextureImporter:
       bones: []
       spriteID: ea603226028b7794eb3a9146ff62aaf9
       internalID: 1496416831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_tileset_sunnysideworld_16px_0
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 848
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0d061b6de10c34e8162f8dda086b71
+      internalID: -851008351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corner1
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 314
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821c49e0ae276ca48a39ea49d355d8f4
+      internalID: -736804713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corner2
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 314
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c927c1667c25c34e92478a808268b8f
+      internalID: 359914744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corner3
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 306
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63b6c32e63c14c4681928288bdfcdfe
+      internalID: 67001066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corner4
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 306
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d942e98552352ed45a5f995024d82ae6
+      internalID: -1051212361
       vertices: []
       indices: 
       edges: []
@@ -384,9 +489,14 @@ TextureImporter:
       carrotStage2: -385111301
       carrotStage3: -1392569841
       carrotStage4: 1558980442
+      corner1: -736804713
+      corner2: 359914744
+      corner3: 67001066
+      corner4: -1051212361
       dirt: -2029421439
       grass: -10311933
       shovel: 1496416831
+      spr_tileset_sunnysideworld_16px_0: -851008351
       wateringCan: -445531665
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

@@ -41,20 +41,29 @@ public class HotbarManager : MonoBehaviour
         int index = hotbarSlots.FindIndex(i => i.item == itemPassed.item);
         if (currentItemBeingSelected == -1)
         {
+            //NOTHING CURRENTLY SELECTED
             currentItemBeingSelected = index;
             itemPassed.transform.GetChild(3).gameObject.SetActive(true);
+            MouseFollower.instance.ChangeCursor(itemPassed.item.itemIcon);
         }
         else
         {
             if (index == currentItemBeingSelected)
             {
+                //DESELECT CURRENT ITEM
                 itemPassed.transform.GetChild(3).gameObject.SetActive(false);
                 currentItemBeingSelected = -1;
+                MouseFollower.instance.ChangeCursor(null);
+                return;
             }
+
+            //CLICKING ON A DIFFERENT ITEM
             //selecting new item? not working fully
             hotbarSlots[currentItemBeingSelected].transform.GetChild(3).gameObject.SetActive(false);
             currentItemBeingSelected = index;
             itemPassed.transform.GetChild(3).gameObject.SetActive(true);
+            MouseFollower.instance.ChangeCursor(itemPassed.item.itemIcon);
+
         }
     }
 
